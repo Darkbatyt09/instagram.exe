@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Instagram.exe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class='instagram' ontouchstart>
+  <div class='inner'>
+    <header class='bar'>
+      <h1>Instagram.exe</h1>
+      <div class='buttons'>
+        <a class='minimize'></a>
+        <a class='maximize'></a>
+        <a class='close'></a>
+      </div>
+    </header>
+    <nav class='menu'>
+      <ul>
+        <li>
+          <a href='https://codepen.io/' target='_blank'>Codepen</a>
+        </li>
+        <li>
+          <a href='https://codepen.io/louh/pen/oZJQvm' target='_blank'>Scrollbars</a>
+        </li>
+        <li>
+          <a href='https://dribbble.com/shots/2872044-Instagram-For-Windows-95' target='_blank'>Inspiration</a>
+        </li>
+      </ul>
+    </nav>
+    <div class='container'>
+      <input checked='true' class='menu-input' id='input-home' name='menu' type='radio'>
+      <label class='menu-label' for='input-home'>Home</label>
+      <input class='menu-input' disabled='true' id='input-explore' name='menu' type='radio'>
+      <label class='menu-label' for='input-explore'>Explore</label>
+      <input class='menu-input' disabled='true' id='input-camera' name='menu' type='radio'>
+      <label class='menu-label' for='input-camera'>Camera</label>
+      <input class='menu-input' disabled='true' id='input-activity' name='menu' type='radio'>
+      <label class='menu-label' for='input-activity'>Activity</label>
+      <input class='menu-input' id='input-profile' name='menu' type='radio'>
+      <label class='menu-label' for='input-profile'>Profile</label>
+      <div class='content'>
+        <div class='content-section home'>
+          <div class='feed'>
+            <div class='feed-type' id='home'></div>
+          </div>
+        </div>
+        <div class='content-section profile'>
+          <header id='info'></header>
+          <div class='feed'>
+            <div class='feed-type' id='profile'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  <script src='https://instagram-windows-widget.herokuapp.com/token.js'></script>
+<script src='https://gabriellew.ee/static/js/instafeed.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
